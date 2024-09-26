@@ -20,3 +20,13 @@ services:
       - ./data/postgres/data:/var/lib/postgresql/data/
     env_file:
       - ./dotenv_files/.env
+  backup:
+    image: postgres:13-alpine
+    depends_on:
+      - psql
+    env_file:
+      - ./dotenv_files/.env
+    command: >
+      sh -c 'pg_dump -h psql -U $${POSTGRES_USER} -d $${POSTGRES_DB} -F c -b -v -f /var/lib/postgresql/data/backup_da_base.dump'
+    volumes:
+      - ./data/postgres/data:/var/lib/postgresql/data/
