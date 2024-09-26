@@ -30,3 +30,4 @@ services:
       sh -c 'pg_dump -h psql -U $${POSTGRES_USER} -d $${POSTGRES_DB} -F c -b -v -f /var/lib/postgresql/data/backup_da_base.dump'
     volumes:
       - ./backup:/var/lib/postgresql/data/
+      - ./backups:/backups 
