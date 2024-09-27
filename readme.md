@@ -23,7 +23,7 @@ Software fullstack, para consultas de medicamentos e seus dados.
 
 1. Clone o repositório:
 
-        git clone https://github.com/Denilsoj/ test-tecnico-promaxima.git
+        git clone https://github.com/Denilsoj/test-tecnico-promaxima.git
 2. Entre no diretório do projeto:
 
         cd < diretorio-projeto >
