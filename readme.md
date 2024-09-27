@@ -54,8 +54,8 @@ Software fullstack, para consultas de medicamentos e seus dados.
 
             sudo docker exec -it psql sh
       - Então faça o backup da base de dados:
-
-             pg_restore -U "$ { POSTGRES_USER}" -d "${POSTGRES_DB}" /backups/backup_da_base.dump
+        
+             pg_restore -U "${POSTGRES_USER}" -d "${POSTGRES_DB}" /backups/backup_da_base.dump
       - Então saia da linha de comando:
   
             exit
