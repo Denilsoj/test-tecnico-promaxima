@@ -34,7 +34,7 @@ Software fullstack, para consultas de medicamentos e seus dados.
 
             cd backend/
 
-   2. Entre no dirtório dotenv_files e crie um arquivo .env, logo em seguida crie o arquivo .env
+   2. Entre no dirtório dotenv_files e crie um arquivo .env:
 
                 cd dotenv_files/  
                 touch .env
