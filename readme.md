@@ -41,8 +41,8 @@ Software fullstack, para consultas de medicamentos e seus dados.
                 
    3. Copie todas as variaveis de ambiente do arquivo .env-exaple, logo em seguida atualize os valores de todas as variáveis de ambientes que estejam "CHANGE-ME", e então volte para o diretório backend;
 
-        cp .env-exaple .env
-        cd ..
+            cp .env-exaple .env
+            cd ..
    4. Crie e inicialize o container:
 
              sudo docker-compose up --build
