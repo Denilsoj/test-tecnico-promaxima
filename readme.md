@@ -45,14 +45,14 @@ Software fullstack, para consultas de medicamentos e seus dados.
             cd ..
    4. Crie e inicialize o container:
 
-             sudo docker-compose up --build
+              docker-compose up --build
 
    5. Faça o backup da sua base de dados:
       - **Para isso abra uma nova janela do terminal**
       - Lembrando de sempre estar no diretório backend
       - E então acesse a linha de comando do container que está o postgres:
 
-            sudo docker exec -it psql sh
+             docker exec -it psql sh
       - Então faça o backup da base de dados:
         
              pg_restore -U "${POSTGRES_USER}" -d "${POSTGRES_DB}" /backups/backup_da_base.dump
