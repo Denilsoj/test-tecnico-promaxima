@@ -73,7 +73,7 @@
   }
 
   @media (max-width: 588px) {
-  /* Estilos para telas com largura máxima de 588px */
+  
   
   .laboratoryContainer {
     display: none; 

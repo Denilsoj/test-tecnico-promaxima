@@ -92,12 +92,12 @@ export default {
   
   watch: {
     currentPage(newPage) {
-      this.fetchMedicines(); // Recarregar os dados quando a página mudar
+      this.fetchMedicines(); 
     },
   },
 
   mounted() {
-    this.fetchMedicines(); // Carrega os medicamentos ao montar o componente
+    this.fetchMedicines(); 
   },
 };
 </script>
@@ -114,10 +114,10 @@ export default {
 
 }
 @media (max-width: 588px) {
-  /* Estilos para telas com largura máxima de 588px */
+  
   
   #title {
-    display: none; /* Diminui o tamanho da fonte do título */
+    display: none; 
   }
 }
 </style>
